@@ -6,13 +6,13 @@
 #    By: efret <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/20 11:38:36 by efret             #+#    #+#              #
-#    Updated: 2023/11/24 10:50:16 by efret            ###   ########.fr        #
+#    Updated: 2023/11/27 00:03:02 by efret            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = cc
+CC = clang
 CFLAGS = -Wall -Wextra -Werror
 CFLAGS += -fPIC
 
