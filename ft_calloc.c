@@ -6,7 +6,7 @@
 /*   By: efret <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 15:48:51 by efret             #+#    #+#             */
-/*   Updated: 2023/11/21 18:53:33 by efret            ###   ########.fr       */
+/*   Updated: 2023/11/28 18:42:52 by efret            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*res;
 
 	nbytes = nmemb * size;
+	if (nbytes < nmemb || nbytes < size)
+		return (NULL);
 	res = malloc(nbytes);
 	if (!res)
 		return (NULL);
