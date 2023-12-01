@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*res;
 
 	nbytes = nmemb * size;
-	if (nbytes < nmemb || nbytes < size)
+	if (nbytes < nmemb && nbytes < size)
 		return (NULL);
 	res = malloc(nbytes);
 	if (!res)
